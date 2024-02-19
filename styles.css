@@ -1,0 +1,101 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: hsl(229, 6%, 66%);
+}
+
+body {
+    margin: 0;
+    padding-block-end: 5rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    color: hsl(234, 12%, 34%);
+}
+
+.pack {
+    margin-inline: auto;
+    max-width: 1200px;
+    padding-inline: 2rem;
+}
+
+.pack--narrow {
+    max-width: 550px;
+}
+
+header {
+    text-align: center;
+    margin-block: 6rem;
+}
+
+header > p {
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 200;
+}
+
+h1 span {
+    font-weight: 600;
+}
+.layout-box {
+    --gap: 2rem;
+
+    display: flex;
+    gap: var(--gap);
+}
+
+@media (max-width: 800px) {
+    .layout-box {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+
+    }
+}
+
+.layout-box > * {
+    flex: 1;
+}
+
+.col {
+   display: grid;
+   gap: var(--gap);
+   align-content: center;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow:  0 .5rem 1.5rem rgba(0, 50, 100, .15);
+    border-top: 5px solid;
+}
+
+.title-bloc {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-img {
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+}
+/* Pour modifier les classes des bordures */
+.border-1 {
+    border-color: hsl(180, 62%, 55%);
+}
+.border-2 {
+    border-color: hsl(0, 78%, 62%);
+}
+.border-3 {
+    border-color: hsl(34, 97%, 64%);
+}
+.border-4 {
+    border-color:  hsl(212, 86%, 64%);
+}
